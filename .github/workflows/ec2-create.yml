@@ -48,5 +48,5 @@ jobs:
           git clone https://github.com/PearlThoughts-GitHub-Actions/Snipe-IT
           cd /home/ubuntu/Snipe-IT
           git pull origin main
+          sed -i "s/localhost/$(curl ifconfig.me)/g" .env.docker
           sudo docker-compose up -d
-          sudo docker-compose up --build -d
