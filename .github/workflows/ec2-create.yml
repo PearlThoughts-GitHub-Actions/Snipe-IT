@@ -42,6 +42,7 @@ jobs:
          pwd
           sudo apt-get update -y
           sudo install docker.io -y
+          sudo apt-get install docker-compose-plugin -y 
           git clone https://github.com/PearlThoughts-GitHub-Actions/Snipe-IT
           cd /home/ubuntu/Snipe-IT
           git pull origin main
