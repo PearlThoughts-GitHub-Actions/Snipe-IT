@@ -41,8 +41,10 @@ jobs:
         script: |
          pwd
           sudo apt-get update -y
-          sudo install docker.io -y
-          sudo apt-get install docker-compose-plugin -y 
+          sudo apt install docker.io -y
+          sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+          docker-compose --version
           git clone https://github.com/PearlThoughts-GitHub-Actions/Snipe-IT
           cd /home/ubuntu/Snipe-IT
           git pull origin main
