@@ -24,11 +24,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: log in dockerhub
-      uses: ./
-      with:
-          username: ${{ secrets.DOCKERUSER }}
-          password: ${{ secrets.DOCKERHUB_PASS }}
+    #- name: log in dockerhub
+      #uses: ./
+      #with:
+         #username: ${{ secrets.DOCKERUSER }}
+          #password: ${{ secrets.DOCKERHUB_PASS }}
          # Runs a set of commands using the runners shell
     - name: executing remote ssh commands using ssh key
       uses: appleboy/ssh-action@master
