@@ -40,6 +40,8 @@ jobs:
            
         script: |
          pwd
+          sudo apt-get update -y
+          sudo install docker.io -y
           git clone https://github.com/PearlThoughts-GitHub-Actions/Snipe-IT
           cd /home/ubuntu/Snipe-IT
           git pull origin main
