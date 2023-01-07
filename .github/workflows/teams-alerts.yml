@@ -23,7 +23,8 @@ jobs:
         uses: jdcargile/ms-teams-notification@v1.3
         with:
           github-token: ${{ github.token }} # this will use the runner's token.
-          ms-teams-webhook-uri: https://pearlthoughts.webhook.office.com/webhookb2/2ba26411-5156-4cf9-a749-4c9864d70b11@01539d20-c779-4da8-aca2-5c1d5a6fc8bb/IncomingWebhook/1962720c97c246638df3bf9222e5408c/3beb573c-1300-4798-bf75-e4ff50a487c6
+          ms-teams-webhook-uri: https://pearlthoughts.webhook.office.com/webhookb2/36431c18-983a-49af-865b-25432506148c@01539d20-c779-4da8-aca2-5c1d5a6fc8bb/IncomingWebhook/22ba0953781d49ffa9ce05f517555836/e9e8064d-1870-4dbd-af63-906027f1bded
+          #ms-teams-webhook-uri: https://pearlthoughts.webhook.office.com/webhookb2/2ba26411-5156-4cf9-a749-4c9864d70b11@01539d20-c779-4da8-aca2-5c1d5a6fc8bb/IncomingWebhook/1962720c97c246638df3bf9222e5408c/3beb573c-1300-4798-bf75-e4ff50a487c6
           notification-summary: "Prod Deployment Completed with commit ID: ${{ github.event.head_commit.id }} & Commit message: ${{ github.event.head_commit.message }} "
           notification-color: 17a2b8
           timezone: Asia/Kolkata
