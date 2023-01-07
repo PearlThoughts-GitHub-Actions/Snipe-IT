@@ -1,7 +1,7 @@
 name: MS Teams Notification
 
 on: [push, pull_request]
-branches: [ teams-alerts ]
+#branches: [ teams-alerts ]
 
 # push:
 #     branches: [ teams-alerts ]
