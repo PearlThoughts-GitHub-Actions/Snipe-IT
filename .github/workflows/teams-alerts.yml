@@ -1,10 +1,12 @@
 name: MS Teams Notification
 
-on:
-push:
-    branches: [ teams-alerts ]
-pull_request:
-    branches: [ teams-alerts ]
+on: [push, pull_request]
+branches: [ teams-alerts ]
+
+# push:
+#     branches: [ teams-alerts ]
+# pull_request:
+#     branches: [ teams-alerts ]
 #jobs:
 
 
