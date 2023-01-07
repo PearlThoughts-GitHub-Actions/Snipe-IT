@@ -15,7 +15,7 @@ build:
 
 notify:
     runs-on: ubuntu-latest
-    #if: always()
+    if: always()
     needs: build
     steps:
     - name: Send a Notification
