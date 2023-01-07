@@ -14,6 +14,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Demo Step
+        run: echo $GITHUB_RUN_NUMBER
       # this is the new step using the ms-teams-notification action
       - name: Notify dedicated teams channel
         uses: jdcargile/ms-teams-notification@v1.3
