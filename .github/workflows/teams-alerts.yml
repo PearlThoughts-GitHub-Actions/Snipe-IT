@@ -15,11 +15,11 @@ build:
 
 notify:
     runs-on: ubuntu-latest
-    if: always()
+    #if: always()
     needs: build
     steps:
     - name: Send a Notification
-        #id: notify
+        id: notify
         uses: thechetantalwar/teams-notify@v2
         with:
         teams_webhook_url: https://pearlthoughts.webhook.office.com/webhookb2/2ba26411-5156-4cf9-a749-4c9864d70b11@01539d20-c779-4da8-aca2-5c1d5a6fc8bb/IncomingWebhook/1962720c97c246638df3bf9222e5408c/3beb573c-1300-4798-bf75-e4ff50a487c6
